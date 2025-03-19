@@ -5,6 +5,7 @@ import Timer from "./puzzle_components/Timer";
 import Leaderboard from "./puzzle_components/Leaderboard";
 import GridFinished from "./puzzle_components/GridFinished";
 import MenuIcon from "./puzzle_components/MenuIcon";
+import LeaderboardIcon from "./puzzle_components/LeaderboardIcon";
 import { useEffect, useState } from "react";
 import { gridFont, findEmptyCell, randomizeGrid } from "../utils/gridUtils";
 
@@ -52,6 +53,13 @@ const PuzzleGame = ({ changeAppState }) => {
           handleMenuClick={handleMenuClick}
           leaderboardVisible={leaderboardVisible}
           setLeaderboardVisible={setLeaderboardVisible}
+          menuVisible={menuVisible}
+        />
+        <LeaderboardIcon
+          setLeaderboardVisible={setLeaderboardVisible}
+          handleMenuClick={handleMenuClick}
+          setMenuVisible={setMenuVisible}
+          leaderboardVisible={leaderboardVisible}
           menuVisible={menuVisible}
         />
         {timerVisible && (
