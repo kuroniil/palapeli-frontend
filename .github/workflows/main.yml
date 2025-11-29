@@ -28,3 +28,6 @@ jobs:
         context: .
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/palapeli-frontend:latest
+    - name: Render deploy
+      run: |
+          curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
