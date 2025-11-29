@@ -47,7 +47,7 @@ const PuzzleGame = ({ changeAppState }) => {
 
   return (
     <div>
-      <Header title="pala_peli" />
+      <Header title="pala_peli2" />
       <div className="main-buttons">
         <MenuIcon
           handleMenuClick={handleMenuClick}
