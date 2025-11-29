@@ -1,11 +1,11 @@
-import PuzzleGame from './components/Puzzlegame'
+import PuzzleGame from "./components/Puzzlegame";
 
 function App() {
   return (
     <div className="games">
       <PuzzleGame />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
